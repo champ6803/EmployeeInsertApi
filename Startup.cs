@@ -25,6 +25,13 @@ namespace EmployeeInsertApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder => builder.AllowAnyOrigin()
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod());
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -39,8 +46,8 @@ namespace EmployeeInsertApi
             {
                 app.UseHsts();
             }
-
-            app.UseHttpsRedirection();
+            app.UseCors("AllowAll");
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

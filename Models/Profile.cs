@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace EmployeeInsertApi.Models
 {
-    public class User
+    public class Profile
     {
         [BsonRepresentation(BsonType.ObjectId)]
         public string id { get; set; }
