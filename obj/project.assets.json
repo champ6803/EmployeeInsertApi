@@ -6025,7 +6025,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "bmcvr0JmMoNq6nALrb6Lg6+iMwskYRvSnUHHKbXJvhywW/L2JP9y7KfRD46C4+ZBwthF+IBLMKV1tjfyiowg6g==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -8661,7 +8661,7 @@
       ]
     },
     "System.Diagnostics.Process/4.1.0": {
-      "sha512": "mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
+      "sha512": "m/ekGY63RsHDWp2epwynUo7vzbtZDog0JjO5kqui2vMFzonzKh97bND5lQQdeZ67LV23laOuUzoEXVTBeJNu+w==",
       "type": "package",
       "path": "system.diagnostics.process/4.1.0",
       "files": [
@@ -12656,28 +12656,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\champ\\.nuget\\packages\\": {},
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\EmployeeInsertApi\\EmployeeInsertApi.csproj",
+      "projectUniqueName": "E:\\project\\EmployeeInsertApi\\EmployeeInsertApi.csproj",
       "projectName": "EmployeeInsertApi",
-      "projectPath": "C:\\Project\\EmployeeInsertApi\\EmployeeInsertApi.csproj",
-      "packagesPath": "C:\\Users\\champ\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\EmployeeInsertApi\\obj\\",
+      "projectPath": "E:\\project\\EmployeeInsertApi\\EmployeeInsertApi.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "E:\\project\\EmployeeInsertApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\champ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EmployeeInsertApi.Models;
+using EmployeeInsertApi.DAL;
 
 namespace EmployeeInsertApi.Libraries
 {
@@ -13,7 +14,11 @@ namespace EmployeeInsertApi.Libraries
         public async Task<Profile> InsertEmployee(Profile p)
         {
             Profile pro = new Profile();
-            var em = await emdal.UpdateEmployee(p);
+            pro.email = p.email;
+            pro.location =p.location;
+            pro.position = p.position;
+            pro.salary = p.salary;
+            await emdal.UpdateEmployee(pro);
             return pro;
         }
     }

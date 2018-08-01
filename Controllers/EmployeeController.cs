@@ -3,23 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using EmployeeInsertApi.Helper;
 using EmployeeInsertApi.Models;
-using Microsoft.AspNetCore.Cors;
+using EmployeeInsertApi.Helper;
 
 namespace EmployeeInsertApi.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
     public class EmployeeController : ControllerBase
     {
-        EmployeeHelper emHelp = new EmployeeHelper();
-        
-         [HttpPost("/insert")]
-        public async Task<Profile> InsertEmployee(Profile p)
+        EmployeeHelper emHeplp = new EmployeeHelper();
+        // GET api/values
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> Get()
         {
-            var em = emHelp.InsertEmployee(p);
-            return await em;
+            return new string[] { "value1", "value2" };
+        }
+
+        // GET api/values/5
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(int id)
+        {
+            return "value";
+        }
+
+        // POST api/values
+        [HttpPost]
+        public async Task UpdateEmployee(Profile p)
+        {
+            var result = await emHeplp.InsertEmployee(p);
+            
         }
 
         // PUT api/values/5
