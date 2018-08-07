@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EmployeeInsertApi.Models;
 using EmployeeInsertApi.Helper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EmployeeInsertApi.Controllers
 {
